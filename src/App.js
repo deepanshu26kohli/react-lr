@@ -2,6 +2,7 @@ import React from 'react'
 import Student from './Pages/Student'
 import {  Routes, Route } from 'react-router-dom';
 import AddStudent from './Pages/AddStudent';
+import EditStudent from './Pages/EditStudent';
 const App = () => {
   return (
     <div>
@@ -11,6 +12,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Student />} />
         <Route path="/addstudent" element={<AddStudent />} />
+        <Route path="/edit-student/:id" element={<EditStudent />} />
       </Routes>
     </div>
 
